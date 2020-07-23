@@ -45,3 +45,10 @@ curl -X POST \
 -H "Content-Type: application/json" \
 "https://api.mercadopago.com/users/test_user?access_token=TEST-2328908812279734-070509-4e87e2b552a20611336e91b2ae03743e-530429288" \
 -d '{"site_id":"MLA"}'
+-----------------------------------------------------------------------------
+
+Tarjeta de Credito de Prueba
+
+ VISA 4509953566233704 | 
+cvc 123 
+vencimiento 11/25 
