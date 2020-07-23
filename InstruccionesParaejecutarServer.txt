@@ -1,0 +1,8 @@
+1- Ejecutar en la consola
+
+composer require "mercadopago/dx-php"
+
+
+2- Ejecutar 
+
+php -S localhost:8000

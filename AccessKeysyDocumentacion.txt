@@ -1,0 +1,47 @@
+Documentacion:
+
+Implementacion de Api Pagos con tarjeta:
+https://www.mercadopago.com.ar/developers/es/guides/payments/api/receiving-payment-by-card/
+
+Referencia de API´s:
+
+https://www.mercadopago.com.ar/developers/es/reference/
+
+Manejo de Respuestas de Error:
+
+https://www.mercadopago.com.ar/developers/es/guides/payments/api/handling-responses/
+
+Recomendaciones para mejorar la aprovacion de pagos:
+
+https://www.mercadopago.com.ar/developers/es/guides/manage-account/payment-rejections/
+
+-------------------------------------------------------------------------
+
+Credenciales de Prueba:
+
+clave publica: TEST-a3935daa-4d33-4f19-8f2b-62e117cc4158
+clave privada: TEST-2328908812279734-070509-4e87e2b552a20611336e91b2ae03743e-530429288
+
+Credenciales de Produccion:
+
+clave publica: APP_USR-d4a7b7bf-292c-4d11-b524-3581accbddc6
+clave privada: APP_USR-2328908812279734-070509-81fce3aba5950350df38006c2f03cdf2-530429288
+
+clientID: 2328908812279734
+clientSecret: PLeqbOtfMITBhiGNJWxVrG1cVI5IOvka
+
+----------------------------------------------------------------------------
+
+Usuarios de Prueba:
+
+0{"id":613278607,"nickname":"TETE6991181","password":"qatest5686",
+"site_status":"active","email":"test_user_23711886@testuser.com"}
+
+-----------------------------------------------------------------------------
+
+Comando Para generar Usuarios de Prueba:
+
+curl -X POST \
+-H "Content-Type: application/json" \
+"https://api.mercadopago.com/users/test_user?access_token=TEST-2328908812279734-070509-4e87e2b552a20611336e91b2ae03743e-530429288" \
+-d '{"site_id":"MLA"}'
