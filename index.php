@@ -32,7 +32,20 @@
      //$payment->notification_url = "http://localhost:8100/";
     
       $payment->save();
-      echo $payment->status;
-      
+
+      $paymentResponse = [
+        "status"=>$payment->status,
+        "status_detail"=>$payment->status_detail,
+        "id"=>$payment->id,
+        "payment_method_id"=>$payment->payment_method_id,
+        "payer"=>[
+          "email"=>$payment->payer->email,
+          "identification"=>$payment->payer->identification->number]
+      ];
+      $paymentEncoded = json_encode($paymentResponse);
+      echo $paymentEncoded;
+      // echo $payment->status;
+      // echo $payment->status_detail;
+      // echo $payment->id;
   
       ?>
